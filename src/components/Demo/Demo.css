@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+.demoContainer{
+    margin-top: 6rem;
+    width: 70%;
+    height: auto;
+    margin-left: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 5px;
+    padding: 0 1rem;
+    z-index: 2;
+}
+
+.linkIcon, .copyIcon{
+    background-color: transparent;
+    height: 2rem;
+    left: 10px;
+    z-index: 2;
+    top: 2px;
+    color: rgb(38, 0, 255);
+}
+
+.input{
+    width: 97%;
+    height: 2rem;
+    left: 0;
+    top: 0;
+    padding: 0 2rem;
+    outline: none;
+    border: none;
+    border-left: none;
+}
+
+.submit_btn{
+    margin-right: -14px;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    border-left: 1px solid gray;
+    padding: 0 10px;
+}
+
+.input:focus +.linkIcon{
+    background-color: green;
+}
+
+
+
+.history{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    overflow-y: auto;
+    margin-top: 2rem;
+    z-index: 2;
+}
+
+.searchHistory{
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    margin-bottom: 5px;
+}
+
+
+.link_card{
+    background: #fff;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    color: blue;
+    font-weight: 400;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.deleteUrl{
+    color:red;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+     margin-top: 5px;
+}
+.link_card:hover .deleteUrl{
+    display: block;
+}
+.copy_btn{
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+.copyIcon{
+    color: rgba(0, 0, 0, 0.9);
+}
+.copyIcon:hover{
+    color: green;
+}
+.articleSummary{
+   padding-bottom: 2rem;
+    margin-top: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+.articleSummary h2{
+    margin-bottom: 2rem;
+}
+.articleSummary h2 span{
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+
+}
+
+.errorMsg{
+    border: 0.5px solid white;
+    border-left: 1px solid rgb(85, 85, 85);
+    border-top: 1px solid rgb(107, 107, 107);
+    height: 12rem;
+    width: 60%;
+    margin: 4rem 0;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: 2rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    color: yellow;
+    background-image: linear-gradient(145deg, rgba(0,0,0,0.1), rgba(0,0,0,0.5));
+    backdrop-filter: blur(10px);
+}
+.errorMsg::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -7.2rem;
+    height: 12rem;
+    width: 10rem;
+    background-image: url('../../assets/error.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.errorMsg span{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    position: relative;
+    color: black;
+}
+
+.loading{
+    margin-top: 3rem;
+    height: 120px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* border: 2px solid red; */
+}
+
+
+.footer{
+    height: 10rem;
+    display: flex;
+    justify-content: flex-end ;
+    align-items: end;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 870px) {
+    .urlLink{
+        width: 90%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .deleteUrl{
+        display: block;
+    }
+    
+}

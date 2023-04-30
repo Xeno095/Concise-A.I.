@@ -1,0 +1,58 @@
+
+.main{
+    min-height: 100vh;
+    width: 100%;
+    /* overflow: hidden; */
+    /* z-index: -3; */
+    background: linear-gradient(to right, #8360c3, #2ebf91);
+    /* animation: changeColor 25s alternate infinite; */
+}
+
+
+
+.gradient{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    /* background: linear-gradient(to right, #8360c3, #2ebf91); */
+}
+.gradient img{
+    float: right;
+    height: 100%;
+    z-index: -1000!important;
+    opacity: 0.8;
+    animation: changeColor 50s alternate infinite;
+}
+
+
+@keyframes changeColor{
+    0%{
+        filter: hue-rotate(0deg);
+        transform: rotate(0deg) scale(0);
+    }
+    50%{
+        filter: hue-rotate(180deg);
+        transform: rotate(180deg) scale(2.5);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+        transform: rotate(360deg) scale(5);
+    }
+}
+
+@media screen and (max-width:870px){
+    .gradient{
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+    .gradient::after{
+        width: 100%;
+    }
+}

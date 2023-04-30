@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+	
+.nav{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    margin-top: -25px;
+}
+
+.logo{
+    height: 140px;
+    width: 140px;
+    /* border: 2px solid red; */
+}
+
+.logo video{
+    /* border: 2px solid green; */
+    mix-blend-mode: color-burn;
+    width: 100%;
+    height: auto;
+}
+
+.black_btn{
+    position: relative;
+    height: 2rem;
+    padding: 0 15px;
+    border-radius: 20px;
+    color: azure;
+    background-color: black;
+    border: 1px solid black;
+    letter-spacing: 1px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.black_btn:hover{
+    outline: 1px solid black;
+    outline-offset: 1px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.heroText{
+    margin-top: 2rem;
+    font-size: 3rem;
+    font-weight: 1000;
+    text-align: center;
+    font-family: 'Bruno Ace SC', cursive;
+    background: linear-gradient(90deg, rgba(36,0,9,1) 0%, rgba(9,22,121,1) 49%, rgba(255,27,0,1) 100%);
+    /* background: linear-gradient(90deg, rgba(108,0,181,1) 0%, rgba(253,29,29,1) 50%, rgba(193,192,0,1) 100%); */
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4),
+    -3px -3px 1px rgba(255, 255, 255, 0.1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    pointer-events: none;
+    user-select: none;
+    position: relative;
+    z-index: 1000 !important;
+}
+
+.heroPara{
+    margin-top: 2rem;
+    width: 80%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    line-height: 20px;
+    font-family: 'Bruno Ace', cursive;
+    pointer-events: none;
+    user-select: none;
+    text-align: center;
+    z-index: 10;
+}
